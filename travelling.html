@@ -1,0 +1,339 @@
+
+<html>
+<head>
+<title>travelling</title>
+<style>
+.home,.contact,.Destination,.About,.login,.sign,.src {
+	border:none;
+	background-color:transparent;
+	padding:10px 22px;
+	font-size:10px;
+	cursor:pointer;
+	position:relative;
+	top:2 px;
+	
+	background-color:ghostwhite;
+	border-radius:13px;
+	overflow:hidden;
+	padding:10px;
+	outline:none;
+	transition:all .1s ease;
+	color:#fff;
+	border:2px solid white;
+	font-family:'montserrat',sans-serif;
+	text-transform:uppercase;
+	text-align:center;
+	line-height:1;
+	font-size:11px;
+	background-color:transparent;
+	padding:10px;
+	outline:none;
+	border-radius:12px;
+}
+.navi{
+	border:1px outset black;
+	background-color:#454545;
+	padding:10px;
+	width: 100%;
+	overflow:fixed;
+	
+
+	box-shadow: 35px 35px 50px gray;
+	}
+.search{
+    position:relative;
+	left:600px;
+	border:4px solid white;
+	border-radius:13px;
+	size:150px;
+
+}
+.login {
+    position:relative;
+	left:740px;
+	}
+.sign{
+    position:relative;
+	left:750px;
+	}
+.home{
+    position:relative;
+	left:10px;
+	background-color:transparent;
+	transition:background-color 2s;
+	}
+.contact{
+    position:relative;
+	left:20px;
+	}
+.Destination{
+    position:relative;
+	left:30px;
+	}
+.About{
+    position:relative;
+	left:40px;
+	}
+.src{
+	position:relative;
+	left:600px;
+}
+.home:hover{
+	background-color:transparent;
+	border-radius-shadow:0 5px 50px 0 #FBFBF9	 inset, 0 5px 50px 0 #FBFBF9,
+               0 5px 50px 0 #FBFBF9	 inset, 0 5px 50px 0 #FBFBF9;
+	text-shadow: 0 0 5px #FBFBF9	, 0 0 5px #FBFBF9	;  
+}
+.contact:hover{
+	background-color:transparent;
+	border-radius-shadow:0 5px 50px 0 #FBFBF9	 inset, 0 5px 50px 0 #FBFBF9,
+               0 5px 50px 0 #FBFBF9	 inset, 0 5px 50px 0 #FBFBF9;
+	text-shadow: 0 0 5px #FBFBF9	, 0 0 5px #FBFBF9	;  
+}
+.destination:hover{
+	background-color:transparent;
+	border-radius-shadow:0 5px 50px 0 #FBFBF9	 inset, 0 5px 50px 0 #FBFBF9,
+               0 5px 50px 0 #FBFBF9	 inset, 0 5px 50px 0 #FBFBF9;
+	text-shadow: 0 0 5px #FBFBF9	, 0 0 5px #FBFBF9	;  
+}
+.About:hover{
+	background-color:transparent;
+	border-radius-shadow:0 5px 50px 0 #FBFBF9	 inset, 0 5px 50px 0 #FBFBF9,
+               0 5px 50px 0 #FBFBF9	 inset, 0 5px 50px 0 #FBFBF9;
+	text-shadow: 0 0 5px #FBFBF9	, 0 0 5px #FBFBF9	;  
+}
+.src:hover{
+	background-color:transparent;
+	border-radius-shadow:0 5px 50px 0 #FBFBF9	 inset, 0 5px 50px 0 #FBFBF9,
+               0 5px 50px 0 #FBFBF9	 inset, 0 5px 50px 0 #FBFBF9;
+	text-shadow: 0 0 5px #FBFBF9	, 0 0 5px #FBFBF9	;  
+}
+.login:hover{
+	background-color:transparent;
+	border-radius-shadow:0 5px 50px 0 #FBFBF9	 inset, 0 5px 50px 0 #FBFBF9,
+               0 5px 50px 0 #FBFBF9	 inset, 0 5px 50px 0 #FBFBF9;
+	text-shadow: 0 0 5px #FBFBF9	, 0 0 5px #FBFBF9	;  
+}
+.sign:hover{
+	background-color:transparent;
+	border-radius-shadow:0 5px 50px 0 #FBFBF9	 inset, 0 5px 50px 0 #FBFBF9,
+               0 5px 50px 0 #FBFBF9	 inset, 0 5px 50px 0 #FBFBF9;
+	text-shadow: 0 0 5px #FBFBF9	, 0 0 5px #FBFBF9	;  
+}
+.background-image{
+	background-image: url('https://www.tripsavvy.com/thmb/W7s547K1v1G-TkllmnOGwDnvEEA=/2121x1193/smart/filters:no_upscale()/GettyImages-930881934-5ae56fe48023b90036464e72.jpg');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	border-radius: 10px;
+	width:100%;
+	height:90vh;
+	transition:5s;
+	
+	
+	animation-name:animate;
+	animation-direction:alternate-reverse;
+	animation-duration:30s;
+	animation-fill-mode:forwards;
+	animation-iteration-count:infinite;
+	animation-play-state:running;
+	animation-timing-function:ease-in-out;
+}
+@keyframes animate{
+	0%{
+	background-image: url('https://qph.cf2.quoracdn.net/main-qimg-075b1ff16573e391c5952e9243ecef88-lq');
+	}20%{
+	background-image: url('https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Fsundaytimes%2Fprod%2Fweb%2Fbin%2Fa0d508c8-9008-11ec-8038-2fedb801d1cc.jpg?crop=4272%2C2403%2C0%2C223&resize=1200');
+	}40%{
+	background-image: url('https://static.toiimg.com/img/74304188/Master.jpg');
+	}60%{
+	background-image: url('https://i0.wp.com/theluxurytravelexpert.com/wp-content/uploads/2017/03/get-paid-10000-a-month-to-stay-at-the-four-seasons-kona-hawaii.jpeg?ssl=1');
+	}80%{
+	background-image: url('https://images.unsplash.com/photo-1433838552652-f9a46b332c40?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80');
+	}100%{
+	background-image: url('https://assets.traveltriangle.com/blog/wp-content/uploads/2020/03/Munnar_11-th-mar.jpg');
+	}
+}
+.name1{
+font-size:70px;
+font-style: italic;
+position:relative;
+top:-170px;
+}
+.container{
+	border-radius:10px;
+	box-shadow: 35px 35px 40px #d0d0d0,
+	-20px -20px 80px gray;
+    padding:20px;
+    width:470px;
+    left:790px;
+	position:relative;
+	top:-850px;
+	
+	
+}
+.body, .container{
+	background-color:#f5f5f5;
+	background-image: url('https://www.corinthiantravel.co.uk/blog/wp-content/uploads/2017/12/Ladakh-the-perfect-Indian-summer-destination-1.jpg');
+	background-size: cover;
+	height: 400px;
+	align-items: center;
+}
+.container1{
+position:relative;
+left:800px;
+top:-620px;
+height:400px;
+width:470px;
+background-color:#f5f5f5;
+padding:20px;
+	border-radius:10px;
+	box-shadow: 35px 35px 40px #d0d0d0,
+	-20px -20px 80px gray;
+	margin:30px 0;
+	}
+.body, .container1{
+	background-color:#f5f5f5;
+	background-image: url('https://www.transindiatravels.com/wp-content/uploads/rohtang-pass-4.jpg');
+	background-size: cover;
+	height:400px;
+}
+.container2{
+position:relative;
+left:70px;
+top:-1090px;
+height:400px;
+width:470px;
+background-color:#f5f5f5;
+padding:20px;
+	border-radius:10px;
+	box-shadow: 35px 35px 40px #d0d0d0,
+	-20px -20px 80px gray;
+	margin:30px 0;
+	}
+.body, .container2{
+	background-color:#f5f5f5;
+	background-image: url('https://www.telegraph.co.uk/content/dam/Travel/2016/April/Houseboat-kerala-backwaters-ALAMY-TRAVEL.jpg');
+	background-size: cover;
+}
+.booking{
+position:relative;
+left:240px;
+top:600px;
+}
+.booking2{
+position:relative;
+left:150px;
+top:-260px;
+}
+.booking3{
+position:relative;
+left:900px;
+top:380px;
+}
+
+
+</style>
+</head>
+<body> 
+
+<div class="navi">
+<nav>
+<button class="home">Home</button>
+<button class="Contact">contact</button>
+<button class="Destination">Destination</button>
+<button class="About">About us</button>
+<input class="search" type="text" placeholder="Search">
+<button class="src">Search</button>
+<a href="login.html"
+<button class="login">LOGIN</button></a>
+<a href="sign in.html"
+<button class="sign ">SIGN IN</button></a>
+</nav>
+</div>
+<div class="background-image" style="max-width:100%;height:75vh;"></div>
+<div class="title1">
+<h1 style="position:relative;left:400px;color:ghostwhite;top:-450px;font-size:100px;
+font-style: cursive;text-shadow: 29px 30px 10px black 
+	;">TRAVEL INDIA</h1>
+</div>
+<div class="name1">
+<h1>Travel To </h1>
+<h1 style="position:relative;left:150px;color:orange;top:-90px">INDIA</h1>
+
+</div>
+<h1 style="top:-350px;position:relative;left:50px;font-size:-40pxt">The Land of Heaven</h1>
+<div class="booking">
+<a href="book now.html">
+<button style="color:white;background-color:#32CD32;background-color:#0088CBA;
+border:none;
+color:white;
+padding:15px 32px;
+text-align:center;
+text-decoration:none;
+display:inline-block;
+font-size:16px;
+margin:4px 2px;
+cursor:pointer;
+border-radius:15px;
+box-shadow:8px 8px 13px gray,
+-10px -10px 18px #d0d0d0;
+	">Book now</button></a>
+</div>
+<div class="ratting">
+<h3 style="position:relative;top:420px;left:120px;">A Welcoming Destination Where Nature, Beaches, <br>Backwaters, Ayurveda, and Culture Await You.</h3>.
+</div>
+<div class="container">
+<a href="LADHAK.html">
+<h1><em>LADAKH</em></h1></a>
+<div class="ratting">
+<h3 style="position:relative;top:380px;left:40px;">Be fearless in the pursuit of what sets your soul on fire.<br>Blessed are the curious for they shall have adventures.</h3>.
+</div>
+</div>
+<div class="container1">
+<a href="manali.html">
+<h1><em>MANALI</em></h1></a>
+<div class="booking2">
+<a href="book now.html"
+<button style="color:white;background-color:#32CD32;background-color:#0088CBA;
+border:none;
+color:white;
+padding:15px 32px;
+text-align:center;
+text-decoration:none;
+display:inline-block;
+font-size:16px;
+margin:4px 2px;
+cursor:pointer;
+border-radius:15px;
+box-shadow:8px 8px 13px gray,
+-10px -10px 18px #d0d0d0;
+	">Book now</button></a>
+</div>
+</div>
+<div class="container2">
+<a href="kerla.html">
+<h1><em>KERALA</em></h1></a>
+<div class="manali">
+<h3 style="position:relative;top:380px;left:760px;">Manali is a town in the Indian state of Himachal Pradesh.<br> It is situated in the northern end of the Kullu Valley, formed by the Beas River.</h3>.
+</div>
+<div class="booking3">
+<a href="book now.html"
+<button style="color:white;background-color:#32CD32;background-color:#0088CBA;
+border:none;
+color:white;
+padding:15px 32px;
+text-align:center;
+text-decoration:none;
+display:inline-block;
+font-size:16px;
+margin:4px 2px;
+cursor:pointer;
+border-radius:15px;
+box-shadow:8px 8px 13px gray,
+-10px -10px 18px #d0d0d0;
+	">Book now</button></a>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,145 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Registration form</title>
+<style>
+
+*{
+	padding: 0;
+	margin: 0;
+	font-family: sans-serif;
+}
+body{
+	background-size: cover;
+	align-items: center;
+	background: linear-gradient(2240deg, #71b7e6,#9b59b6);
+	border:-0px outset black;
+	background-color:#454545;
+	padding:10px;
+	border-radius:13px;
+	box-shadow: 35px 35px 50px gray;
+}
+body{
+	background-image: url('https://mir-s3-cdn-cf.behance.net/project_modules/1400/4d845686128681.5d909dad4ddd3.jpg');
+	width:100%;
+	height:100vh;
+	background-size: cover;
+	
+}
+.registration-form{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+.registration-form h1{
+	font-size: 30px;
+	text-align: center;
+	text-transform: uppercase;
+	margin: 30px 0;
+}
+.registrarion-form p{
+	font-size: 18px;
+	margin: 0;
+}
+.registration-form input{
+	font-size: 14px;
+	padding: 15px 10px;
+	width: 100%;
+	border: 0;
+	border-radius: 5px;
+	outline: none;
+}
+.registration-form button{
+	font-size: 12px;
+	font-width: bold;
+	margin: 5px 0;
+	padding: 15px 10px;
+	width:30%;
+	border: 0;
+	border-radius: 5px;
+}
+form .gender-details .gender-title{
+	font-size:20px;
+	font-width: 500px;
+}
+form .gender-details .category{
+	display: flex;
+	width:80%;
+	margin: 14px 0;
+	justify-content: space-between;
+}
+.gender-details .category label{
+	display: flex;
+	align-items: center;
+}
+.gender-details .category .dot{
+	height: 18px;
+	width: 18px;
+	background: #d9d9d9;
+	border-radius: 50px;
+	margin-right: 10px; 
+	border: 3px solid transparent;
+}
+#dot-1:checked ~ .category label .one,
+#dot-2:checked ~ .category label .two{
+	border-color: #d9d9d9;
+	background: #9b59b6;
+	
+}
+</style>
+<script>
+function validateemail()  
+{  
+var x=document.myform.mail.value;  
+var atposition=x.indexOf("@");  
+var dotposition=x.lastIndexOf(".");  
+if (atposition<1 || dotposition<atposition+2 || dotposition+2>=x.length){  
+  alert("Please enter a valid e-mail address \n atpostion:"+atposition+"\n dotposition:"+dotposition);  
+  return false;  
+  }  
+}  
+	</script>
+
+</head>
+<body>
+
+
+<div class="registration-form">
+<h1>Registration Form</h1>
+<form action="/action_page.php" method="post" onsubmit="return validateemail();">
+<p>Full Name:</p>
+<input type="text" placeholder="Full Name" name="Full Name" required>
+<p>Email:</p>
+<input type="mail" placeholder="Email@" required>
+<p>Password:</p>
+<input type="password" placeholder="password" required>
+<p>Phone Number:</p>
+<input type="phone" placeholder="8483******" required>
+<p>Address:</p>
+<input type="text" rows="4" col="15" placeholder="Address" required>
+<p>Date of Birth:</p>
+<input type="date"placeholder="/DD/MM/YY" required>
+<div class="Gender-details">
+<input type="radio" style="position:relative;right:60px;bottom:-34px;" name="gender" id="dot-1" required>
+<input type="radio" style="position:relative;right:42px;bottom:-20.5px;"name="gender" id="dot-2" required>
+<span class="Gender-title">Gender:</span>
+<div class="category">
+<label for="dot-1">
+<span class="dot one"></span>
+<span class="gender">Male</span>
+</label>
+<label for="dot-2">
+<span class="dot two"></span>
+<span class="gender">Female</span>
+</label>
+</div>
+
+<button type="submit">Submit</button>
+<button type="reset">Reset</button>
+</form>
+</div>
+</div>
+</body>
+</style
+</html>
